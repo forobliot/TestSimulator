@@ -11,7 +11,8 @@
 angular
   .module('testSimulatorApp', [
     'ngRoute',
-    'ngSanitize'
+    'ngSanitize',
+    'angularCharts'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -22,6 +23,10 @@ angular
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
+      })
+      .when('/sim', {
+        templateUrl: 'views/sim.html',
+        controller: 'SimCtrl'
       })
       .otherwise({
         redirectTo: '/'

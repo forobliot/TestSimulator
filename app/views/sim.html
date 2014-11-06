@@ -1,0 +1,53 @@
+<h3>Simulatore</h3>
+<form action="" method="POST" role="form">
+	<legend>Imposta i dati</legend>
+
+	<div class="form-group">
+		<label for="questionfortest">Numero domande per test (Q)</label>
+		<input type="number" class="form-control" id="questionfortest" placeholder="Inserisci valore tra 1 e 100" ng-model="questionfortest">
+	</div>
+	<div class="form-group">
+		<label for="subsetsize">Dimensione serbatoio domande (S)</label>
+		<input type="number" class="form-control" id="subsetsize" placeholder="Inserisci valore tra 1 e 1000" ng-model="subsetsize">
+	</div>
+	<div class="form-group">
+		<label for="usercount">Numero utenti (U)</label>
+		<input type="number" class="form-control" id="usercount" placeholder="Inserisci valore tra 1 e 50000" ng-model="usercount">
+	</div>
+	<div class="form-group">
+		<button type="submit" class="btn btn-primary" ng-click="run()">start</button>
+	</div>
+
+	<div class="form-group">
+		<div 
+	    	data-ac-chart="'line'" 
+	    	data-ac-data="data" 
+	    	data-ac-config="config" 
+	    	class="chart">
+		</div>
+	</div>
+	<div class="form-group">
+		<div 
+	    	data-ac-chart="'bar'" 
+	    	data-ac-data="data2" 
+	    	data-ac-config="config2" 
+	    	class="chart">
+		</div>
+	</div>
+	<div class="form-group">
+		<div 
+	    	data-ac-chart="'bar'" 
+	    	data-ac-data="data3" 
+	    	data-ac-config="config3" 
+	    	class="chart">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="result">Output</label>
+		<textarea id="result" class="form-control" rows="20" ng-model="result"></textarea>
+	</div>
+
+	
+
+</form>
